@@ -16,9 +16,9 @@ export const loadUser = () => async dispatch => {
     } catch (err) {
         dispatch({
             type: AUTH_ERROR
-        })
+        });
     }
-}
+};
 
 // Register user
 export const register = ({ name, email, password}) => async dispatch => {
